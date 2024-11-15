@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border;
     font-family: sans-serif;
+    
 }
-
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 nav{
     display: flex;
+    font-weight: "Bebas Neue";
     gap: 10px;
     align-items: center;
     justify-content: space-between;
@@ -23,6 +30,7 @@ nav{
 .icon:hover{
     color:red;
     fill: red;
+    cursor: pointer;
 }
 
 .hov{
@@ -33,6 +41,7 @@ nav{
 .hov:hover{
     background-color: rgb(50, 50, 50);
     color : red;
+    cursor: pointer;
 
 }
 
@@ -272,8 +281,8 @@ video{
 .main{
     color: white;
     position: absolute;
+    top:3%;
     z-index: 20;
-    top: 45%;
     left: 35%;
 }
 
@@ -288,14 +297,14 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 50px;
 
 }
 
 .news-head > p {
     font-size: 40px;
     font-weight: bolder;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-family:"Bebas Neue";    
 }
 
 .news-head > span{
@@ -307,6 +316,7 @@ video{
     width: 100%;
     justify-content: space-evenly;
     padding-bottom: 50px;
+    gap:50px;
 }
 
 .news-card{
@@ -317,8 +327,65 @@ video{
 
 .news-img-1 > img {
     height: 250px;
-    width:350px
+    width:450px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 
+.news-img-1>img:hover{
+    transform: scale(1.05);
+}
+.collision{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.collision_img{
+    position: relative;
+    left:-350px;
+    width:2200px;
+}
+.collision_text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: hsl(0, 57%, 95%);
+    left:50px;
+    top:150px;
+    
+}
+.collision_heading{
+    font-weight: bold;
+    font-size: 8.7rem;
+    font-family: "Bebas Neue";
+}
+.collision_para{
+    font-family: "Audiowide";
+}
+.collision_btn{
+    margin-top: 10px;
+    width:150px;
+    height:70px;
+    background-color: #1C1C1C;
+    color: hsl(0, 26%, 88%);
+    border: none;
+    font-size: 1.1rem;
+    font-family: "Russo one";
+    transition: all 1s ease;
+}
+.collision_btn:hover{
+    color: #1C1C1C;
+    background-color: hsl(0, 57%, 95%);
+    cursor: pointer;
+}
 
-
+.container-1{
+    position: relative;
+}
+.content-container{
+    position: absolute;
+    top:700px;
+}
+.desc_vid{
+    width: 100px;
+}
