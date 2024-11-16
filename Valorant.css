@@ -1,90 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border;
+    box-sizing: border-box;
     font-family: sans-serif;
-    
+
 }
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-nav{
+
+nav {
     display: flex;
     font-weight: "Bebas Neue";
-    gap: 10px;
+    gap: 17px;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #121111;
     color: white;
-    padding: 0 20px 0 20px;
+    padding: 5px;
+    font-size: 15px;
 }
 
-.icon{
+.icon {
     display: flex;
 
 }
 
-.icon:hover{
-    color:red;
+.icon:hover {
+    color: red;
     fill: red;
     cursor: pointer;
 }
 
-.hov{
+.hov {
     padding: 10px;
     border-radius: 6px;
 }
 
-.hov:hover{
+.hov:hover {
     background-color: rgb(50, 50, 50);
-    color : red;
+    color: red;
     cursor: pointer;
 
 }
 
-.icon p{
-    font-family:sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.icon p {
+    font-family: sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 35px;
 }
 
-.hov_parent{
+.hov_parent {
     padding: 8px;
 }
 
-.hov_parent:hover{
+.hov_parent:hover {
     border-bottom: 2px solid red;
     padding-bottom: 6px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 10px;
     justify-content: space-between;
     align-items: first baseline;
 }
 
-.drop{
+.drop {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.drop:hover{
+.drop:hover {
     background-color: rgb(50, 50, 50);
-    color : red;
+    color: red;
 }
 
-.drop{
+.drop {
     padding: 10px;
     border-radius: 6px;
 }
 
 
-.menu{
+.menu {
     position: absolute;
     background-color: rgb(50, 50, 50);
     border-top: 2px solid red;
@@ -101,12 +97,12 @@ nav{
     width: 8rem;
 }
 
-.option:hover{
+.option:hover {
     background-color: gray;
     color: white;
 }
 
-.option{
+.option {
     width: 80%;
     padding: 10px;
     border-radius: 5px;
@@ -116,54 +112,54 @@ nav{
 }
 
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.riot_icon{
+.riot_icon {
     fill: white;
 }
 
-.riot_icon:hover{
+.riot_icon:hover {
     fill: red;
 }
 
-.riot_games > p {
+.riot_games>p {
     font-size: 20px;
     line-height: 20px;
 }
 
 
-.valo:hover{
+.valo:hover {
     fill: red;
     stroke: red;
 }
 
-.logo:hover{
+.logo:hover {
     fill: red;
 }
 
-.search{
+.search {
     display: flex;
     flex-direction: column;
     width: 300px;
     align-items: center;
 }
 
-.search-logo{
+.search-logo {
     margin: 20px;
 }
 
-.globe{
+.globe {
     margin: 20px;
 }
 
-.play-btn{
+.play-btn {
     width: 6rem;
     height: 2rem;
     font-family: sans-serif, 'Times New Roman', Times, serif;
-    background: rgb(255,0,0);
-    background: linear-gradient(5deg, red , red 40%, rgb(252, 114, 45) 100%);
+    background: rgb(255, 0, 0);
+    background: linear-gradient(5deg, red, red 40%, rgb(252, 114, 45) 100%);
     border-radius: 5px;
     outline: none;
     border: none;
@@ -172,16 +168,14 @@ nav{
     font-weight: bold;
 }
 
-video{
-    filter: grayscale(0.2);
-}
+
 
 
 .ankit-button {
     font-family: 'Ropa Sans', sans-serif;
     color: white;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 0.05rem;
     border: 1px solid #0E1822;
@@ -195,15 +189,15 @@ video{
     transition-property: background-position, border, color;
     position: relative;
     z-index: 1;
-  }
-  
-  .ankit-button:hover {
+}
+
+.ankit-button:hover {
     border: 1px solid #FF4655;
     color: white;
     background-position: 40%;
-  }
-  
-  .ankit-button:before {
+}
+
+.ankit-button:before {
     content: "";
     position: absolute;
     background-color: #0E1822;
@@ -212,17 +206,17 @@ video{
     top: -1px;
     left: -1px;
     transition: background-color 0.15s ease-in-out;
-  }
-  
-  .ankit-button:hover:before {
+}
+
+.ankit-button:hover:before {
     background-color: white;
-  }
-  
-  .ankit-button:hover:after {
+}
+
+.ankit-button:hover:after {
     background-color: white;
-  }
-  
-  .ankit-button:after {
+}
+
+.ankit-button:after {
     content: "";
     position: absolute;
     background-color: #FF4655;
@@ -231,22 +225,17 @@ video{
     bottom: -1px;
     right: -1px;
     transition: background-color 0.15s ease-in-out;
-  }
-  
-  .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+}
 
-  .ankit {
+
+
+.ankit {
     position: relative;
     width: fit-content;
     height: fit-content;
-  }
-  
-  .ankit:before {
+}
+
+.ankit:before {
     content: "";
     position: absolute;
     width: calc(100% + 0.5em);
@@ -256,9 +245,9 @@ video{
     border: 1px solid #0E1822;
     border-bottom: 0px;
     opacity: 0.3;
-  }
-  
-  .ankit:after {
+}
+
+.ankit:after {
     content: "";
     position: absolute;
     width: calc(100% + 0.5em);
@@ -269,31 +258,22 @@ video{
     border-top: 0px;
     opacity: 0.3;
     z-index: 0;
-  }
-  .ankit p{ 
+}
+
+.ankit p {
     font-size: 0px;
-  }
-
-.wrap{
-    position: relative;
 }
 
-.main{
-    color: white;
-    position: absolute;
-    top:3%;
-    z-index: 20;
-    left: 35%;
-}
 
-.news{
+
+.news {
     padding: 0 5% 0 5%;
     display: flex;
     flex-direction: column;
     background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ece1d7a8a15c7f55cb3a09a8aca0fd5d5d93c9ac-5120x1140.png?auto=format&fit=fill&q=80&w=1897);
 }
 
-.news-head{
+.news-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -301,91 +281,181 @@ video{
 
 }
 
-.news-head > p {
+.news-head>p {
     font-size: 40px;
     font-weight: bolder;
-    font-family:"Bebas Neue";    
+    font-family: "Bebas Neue";
 }
 
-.news-head > span{
+.news-head>span {
     font-size: large;
 }
 
-.news-cards{
+.news-cards {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     padding-bottom: 50px;
-    gap:50px;
+    gap: 50px;
 }
 
-.news-card{
+.news-card {
     width: 400px;
     margin: 10px;
 }
 
 
-.news-img-1 > img {
+.news-img-1>img {
     height: 250px;
-    width:450px;
+    width: 450px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
-.news-img-1>img:hover{
+.news-img-1>img:hover {
     transform: scale(1.05);
 }
-.collision{
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-}
-.collision_img{
+
+.collision {
     position: relative;
-    left:-350px;
-    width:2200px;
+    width: 100%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+
+
 }
-.collision_text{
+
+.collision_img {
+
+    position: relative;
+    left: -300px;
+    width: 2100px;
+}
+
+.collision_text {
     display: flex;
     flex-direction: column;
     position: absolute;
     color: hsl(0, 57%, 95%);
-    left:50px;
-    top:150px;
-    
+    left: 50px;
+    top: 200px;
+    gap: 10px;
+
 }
-.collision_heading{
+
+.collision_heading {
     font-weight: bold;
-    font-size: 8.7rem;
+    font-size: 8.5rem;
     font-family: "Bebas Neue";
 }
-.collision_para{
+
+.collision_para {
     font-family: "Audiowide";
+    font-size: 1.1rem;
 }
-.collision_btn{
+
+.collision_btn {
     margin-top: 10px;
-    width:150px;
-    height:70px;
+    width: 150px;
+    height: 70px;
     background-color: #1C1C1C;
     color: hsl(0, 26%, 88%);
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: "Russo one";
     transition: all 1s ease;
 }
-.collision_btn:hover{
+
+.collision_btn:hover {
     color: #1C1C1C;
     background-color: hsl(0, 57%, 95%);
     cursor: pointer;
 }
 
-.container-1{
+
+
+.wrapper-1 {
     position: relative;
 }
-.content-container{
-    position: absolute;
-    top:700px;
+
+.wrapper-1>video {
+    filter: grayscale(0.2);
+    position: relative;
 }
-.desc_vid{
-    width: 100px;
+
+.main-1 {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.description {
+    position: relative;
+    width: 100%;
+    
+}
+
+.description>div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    left:35px;
+    width: 47%;
+    padding: 20px;
+
+}
+.description>img{
+    position: absolute;
+    height:700px;
+    max-width: 100%;
+    /* overflow: hidden; */
+}
+.description-head {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 600;
+    font-style:normal;
+    font-size: 8rem;
+    color: #0E1822;
+}
+.description-para1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.description-para2{
+    font-family: "PT Sans";
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+.description-button{
+    margin-top: 50px;
+    width:200px;
+    height:75px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    background-color: rgb(247, 64, 79);
+    transition: background-color 0.3s ease-in-out;
+}
+.description-button:hover{
+    background-color: #0E1822;
+    cursor: pointer;
+}
+.description>video{
+    position: absolute;
+    width: 700px;
+    left:50%;
+    top:150px;
 }
