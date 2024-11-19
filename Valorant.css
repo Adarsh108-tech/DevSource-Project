@@ -317,44 +317,49 @@ nav {
 }
 
 .collision {
-    position: relative;
+    /* position: relative; */
     width: 100%;
 
     overflow: hidden;
     display: flex;
     flex-direction: column;
-
-
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
 .collision_img {
 
     position: relative;
-    left: -300px;
     width: 2100px;
 }
 
 .collision_text {
+    
     display: flex;
     flex-direction: column;
     position: absolute;
     color: hsl(0, 57%, 95%);
-    left: 50px;
-    top: 200px;
+    left: -30px;
     gap: 10px;
+    max-width: 47%;
+    padding: 20px;
+    padding-left: 70px;
+    padding-top: 50px;
+
 
 }
 
 .collision_heading {
     font-weight: bold;
-    font-size: 8.5rem;
+    font-size: 9rem;
     font-family: "Bebas Neue";
 }
 
 .collision_para {
     font-family: "Audiowide";
-    font-size: 1.1rem;
+    
 }
 
 .collision_btn {
@@ -404,22 +409,39 @@ nav {
     position: relative;
     width: 100%;
     
+    overflow: hidden;
+    display: flex;
+    /* flex-direction: column; */
+
+    justify-content: center;
+    align-items: center;
 }
 
-.description>div {
+.description-text {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 10px;
     left:35px;
-    width: 47%;
+    max-width: 47%;
     padding: 20px;
+    padding-left: 30px;
+    padding-top: 50px;
 
 }
-.description>img{
+.description-vid{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 120px;
+    left:750px;
+    width: 47%;
+    padding: 20px;
+}
+.description>img{
+    position: relative;
     height:700px;
-    max-width: 100%;
+    width: 2100px;
     /* overflow: hidden; */
 }
 .description-head {
@@ -432,6 +454,7 @@ nav {
 .description-para1{
     font-size: 1.2rem;
     font-weight: bold;
+    color: #0E1822;
 }
 .description-para2{
     font-family: "PT Sans";
@@ -458,4 +481,14 @@ nav {
     width: 700px;
     left:50%;
     top:150px;
+}
+.Agents{
+    position: relative;
+    top:701px;
+    width: 100%;
+}
+.Agents>img{
+    position: absolute;
+    height:700px;
+    max-width: 100%;
 }
