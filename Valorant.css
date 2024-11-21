@@ -6,6 +6,11 @@
 
 }
 
+body {
+    background-color: #0e1822e9;
+
+}
+
 nav {
     display: flex;
     font-weight: "Bebas Neue";
@@ -57,9 +62,9 @@ nav {
 
 .buttons {
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: first baseline;
+    gap: 5px;
+    font-size: 0.9rem;
+    
 }
 
 .drop {
@@ -124,15 +129,15 @@ nav {
     fill: red;
 }
 
-.riot_games>p {
-    font-size: 20px;
-    line-height: 20px;
+.logo{
+    
 }
 
 
 .valo:hover {
     fill: red;
     stroke: red;
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -323,13 +328,13 @@ nav {
 
 
     overflow: hidden;
-    
-    
+
+
     display: flex;
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
-    
+
 
 }
 
@@ -337,21 +342,21 @@ nav {
 
     position: relative;
     width: 2100px;
-    left:-330px;
+    left: -280px;
     /* width: fit-content; */
     height: auto;
-    
+
 }
 
 .collision_text {
-    
+
     display: flex;
     flex-direction: column;
     position: absolute;
-    
-    
+
+
     color: hsl(0, 57%, 95%);
-    
+
     gap: 10px;
     max-width: 47%;
     padding: 20px;
@@ -369,7 +374,7 @@ nav {
 
 .collision_para {
     font-family: "Audiowide";
-    
+
 }
 
 .collision_btn {
@@ -395,19 +400,19 @@ nav {
 .wrapper-1 {
     position: relative;
     overflow: hidden;
-    max-width: 1700px;
+    max-width: 1800px;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .wrapper-1>video {
     filter: grayscale(0.2);
     position: relative;
     /* max-height: 800px; */
-    
+
     height: 700px;
     object-fit: cover;
 }
@@ -444,50 +449,56 @@ nav {
     display: flex;
     flex-direction: column;
     top: 10px;
-    left:35px;
+    left: 35px;
     max-width: 47%;
     padding: 20px;
     padding-left: 30px;
     padding-top: 50px;
 
 }
-.description-vid{
+
+.description-vid {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 120px;
-    left:800px;
+    left: 800px;
     max-width: 45%;
     padding: 20px;
 }
-.description>img{
+
+.description>img {
     position: relative;
-    height:700px;
+    height: 700px;
     width: 2100px;
     /* overflow: hidden; */
     width: fit-content;
 }
+
 .description-head {
     font-family: "Staatliches", sans-serif;
     font-weight: 600;
-    font-style:normal;
+    font-style: normal;
     font-size: 8rem;
     color: #0E1822;
 }
-.description-para1{
+
+.description-para1 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #0E1822;
 }
-.description-para2{
+
+.description-para2 {
     font-family: "PT Sans";
     font-size: 1.3rem;
     padding-top: 10px;
 }
-.description-button{
+
+.description-button {
     margin-top: 50px;
-    width:200px;
-    height:75px;
+    width: 200px;
+    height: 75px;
     font-weight: bold;
     font-size: 1.2rem;
     border: none;
@@ -495,78 +506,78 @@ nav {
     background-color: rgb(247, 64, 79);
     transition: background-color 0.3s ease-in-out;
 }
-.description-button:hover{
+
+.description-button:hover {
     background-color: #0E1822;
     cursor: pointer;
 }
-.description>video{
+
+.description>video {
     position: absolute;
     width: 700px;
-    left:50%;
-    top:150px;
+    left: 50%;
+    top: 150px;
 }
-.Agents{
-    
-    /* height:700px;
-    max-width: 2100px;
-    overflow: hidden;
-    
-    justify-content: center;
-    align-items: center;
-    border: 5px solid black; */
+
+.Agents {
+
+
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
-    
-    /* border: 5px solid black; */
+
+
     overflow: hidden;
     display: flex;
+
 }
-.Agents_back{
+
+.Agents_back {
     position: relative;
-    left:-400px;
-    height:750px;
+    left: -450px;
+    height: 750px;
     /*max-width: 2100px; */
-    
+
     width: fit-content;
 }
-.Agents-text{
+
+.Agents-text {
     position: absolute;
     display: flex;
     flex-direction: column;
-    /* top:10px; */
-    /* top: 10px;
-    left:35px; */
-    /* top:10px;
-    left:2px; */
+
     color: hsl(0, 45%, 94%);
-    max-width: 90%;
+    max-width: 95%;
     padding-left: 800px;
-    padding-top: 150px;
-    padding-bottom: 200px;
-    
+    padding-top: 180px;
+    /* padding-bottom: 200px; */
+
 
 }
+
 .Agents-head {
     font-family: "Staatliches", sans-serif;
     font-weight: 600;
-    font-style:normal;
-    font-size: 7.5rem;
+    font-style: normal;
+    font-size: 8rem;
     /* color: #0E1822; */
 }
-.Agents-para1{
+
+.Agents-para1 {
     font-size: 1.2rem;
     font-weight: bold;
 }
-.Agents-para2{
+
+.Agents-para2 {
     font-family: "PT Sans";
     font-size: 1.3rem;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 30px;
 }
+
 .Agents-btn {
-    
+
     margin-top: 10px;
     width: 220px;
     height: 70px;
@@ -584,26 +595,248 @@ nav {
     cursor: pointer;
 }
 
-.Agents-img{
+.Agents-img {
     position: absolute;
     /* top:-650px; */
     /* left:-50px; */
-    top:80px;
-    left:100px;
-    max-height: 580px;
-    max-width: 600px;
+    top: 50px;
+    left: 60px;
+    max-height: auto;
+    max-width: 650px;
 }
-.topper{
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+
+    overflow: hidden;
+    display: flex;
+}
+
+.maps_bg {
+    position: relative;
+    left: -450px;
+    height: 750px;
+    width: fit-content;
+}
+
+.maps_text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    color: #1C1C1C;
+    max-width: 40%;
+    padding-left: 50px;
+    padding-top: 180px;
+    /* padding-bottom: 200px; */
+
+
+}
+
+.maps_h {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+    font-style: normal;
+    font-size: 8rem;
+
+    /* color: #0E1822; */
+}
+
+.maps_p1 {
+    /* padding-top: 50px; */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.maps_p2 {
+    font-family: "PT Sans";
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.maps_text>button {
+    margin-top: 30px;
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    background-color: rgb(247, 64, 79);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.maps_text>button:hover {
+    background-color: #0E1822;
+    cursor: pointer;
+}
+
+.maps_mansion {
+    position: absolute;
+    padding-left: 800px;
+    padding-top: 40px;
+    width: 1470px;
+    height: auto;
+}
+
+
+.topper {
     /* position: relative;
     left:-10px; */
-    max-width: 1700px;
+    max-width: 1800px;
     margin: 0 auto;
     /* border:5px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     /* min-width: 100vw; */
     /* left:0; */
 }
 
+.footer {
+    background-color: rgb(45, 43, 41);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    max-height: 1700px;
+    align-items: center;
+    /* padding:100px; */
+
+    overflow: hidden;
+}
+
+.download {
+    font-family: 'Russo one', Times, serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+
+    /* padding: 35px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.download>button {
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(45, 43, 41);
+    border: none;
+    color: aliceblue;
+    font-weight: 750;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download>button:hover {
+    background-color: hsl(30, 1%, 29%);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121111;
+    width: 100vw;
+    
+}
+
+.social {
+
+    /* margin-top: 40px; */
+    margin-bottom: 30px;
+    width: 33px;
+    height: 33px;
+    border: none;
+    /* margin: 0 auto; */
+    border-radius: 30%;
+    padding: 10px;
+    background-color: #363636;
+    vertical-align: baseline;
+    fill: #fdfefe;
+    cursor: pointer;
+}
+
+.social-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    /* width: 30px; */
+    /* overflow: hidden; */
+}
+
+.game_logo {
+    padding: 20px;
+    /* display: flex; */
+
+}
+
+.riot_logo{
+    fill: rgb(150, 146, 146);
+    cursor: pointer;
+}
+.riot_logo:hover{
+    fill:#fdfefe;
+}
+
+.copyright_1 {
+    font-size: 0.8rem;
+    color: rgb(150, 146, 146);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.copyright_2 {
+    font-size: 0.8rem;
+    color: rgb(150, 146, 146);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.privacy{
+    display: flex;
+    /* gap:40px; */
+    font-size:0.8rem;
+    font-weight: 600;
+}
+.privacy>span{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+.privacy>span:hover{
+    background-color: hsl(30, 1%, 29%);
+}
+.bottom_logo{
+    margin-top: 35px;
+    display: flex;
+    min-width: 30px;
+    
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.bottom_logo>div{
+    background-color: #2a2c2c;
+    border-radius: 13px;
+}
+.bottom_logo>div>img{
+    padding:12px;
+    cursor: pointer;
+    
+}
