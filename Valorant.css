@@ -84,6 +84,10 @@ nav {
     border-radius: 6px;
 }
 
+.esports-side-arrow{
+    position: relative;
+    top: 8px;
+}
 
 .menu {
     position: absolute;
@@ -171,6 +175,12 @@ nav {
     color: black;
     font-size: small;
     font-weight: bold;
+    &:hover{
+        color: red;
+        transition: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+    }
 }
 
 
